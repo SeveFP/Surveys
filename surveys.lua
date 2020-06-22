@@ -100,7 +100,7 @@ function riddim.plugins.survey(bot)
                     if v.conference == command.sender.jid:match("(.-)/") and id == v.id then
                         command.room:send(replyStanza:body(v:toString("short")))
                         break
-                end
+                    end
                 end
 			--return the last survey
 			else
